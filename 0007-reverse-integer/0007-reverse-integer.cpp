@@ -8,11 +8,10 @@ public:
             x=x/10;
             res=(res*10)+rem;
         }
-        if(res>=pow(-2,31) && res<=pow(2,31)-1){
+        if(res>=INT_MIN && res<=INT_MAX){
          return res;}
         else{
-            res=0;
-            return res;
+            return 0;
         }
         
     }
